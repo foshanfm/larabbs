@@ -14,7 +14,7 @@ class VerificationCodesController extends Controller
 
     	//生成4位验证码,左侧补0
     	if (!app()->environment('production')) {
-    		$code = '1234'    	
+    		$code = '1234';    	
     	} else {
     	
     	$code = str_pad(random_int(1, 9999), 4, 0, STR_PAD_LEFT);
@@ -26,6 +26,8 @@ class VerificationCodesController extends Controller
     		return $this->response->errorInternal($message ?? '短信发送异常');
     	}
 
+    	}
+
     	$key = 'verificationCode_'.str_random(15);
         $expiredAt = now()->addMinutes(10);
         // 缓存验证码 10分钟过期。
@@ -35,7 +37,5 @@ class VerificationCodesController extends Controller
             'key' => $key,
             'expired_at' => $expiredAt->toDateTimeString(),
         ])->setStatusCode(201);
-        	
-    	}
     }
 }
