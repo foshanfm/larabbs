@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\Topic;
-use App\Transformers\TopicTransformer;
 use Illuminate\Http\Request;
+use App\Transformers\TopicTransformer;
 use App\Http\Requests\Api\TopicRequest;
 
 class TopicsController extends Controller
@@ -18,5 +18,13 @@ class TopicsController extends Controller
 
     	return $this->response->item($topic, new TopicTransformer())
     		->setStatusCode(201);
+    }
+
+    public function update(TopicRequest $request , Topic $topic)
+    {
+    	$this->authorize('update', $topic);
+
+    	$topic->update($request->all());
+    	return $this->response->item($topic, new TopicTransformer);
     }
 }
