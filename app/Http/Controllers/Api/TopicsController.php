@@ -68,4 +68,9 @@ class TopicsController extends Controller
 
         return $this->response->paginator($topics, new TopicTransformer());
     }
+
+    public function show(Topic $topic, Request $request)
+    {
+        return $this->response->item($topic, new TopicTransformer());
+    }
 }
