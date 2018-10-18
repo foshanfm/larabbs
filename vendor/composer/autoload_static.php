@@ -11,13 +11,13 @@ class ComposerStaticInit9746615780e148cc628ecb1654ad5f58
         '1d1b89d124cc9cb8219922c9d5569199' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
-        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
-        'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
         '34122c0574b76bf21c9a8db62b5b9cf3' => __DIR__ . '/..' . '/cakephp/chronos/src/carbon_compat.php',
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
@@ -94,6 +94,7 @@ class ComposerStaticInit9746615780e148cc628ecb1654ad5f58
         'O' => 
         array (
             'Overtrue\\Pinyin\\' => 16,
+            'Overtrue\\LaravelQueryLogger\\' => 28,
             'Overtrue\\LaravelLang\\' => 21,
             'Overtrue\\EasySms\\' => 17,
         ),
@@ -319,6 +320,10 @@ class ComposerStaticInit9746615780e148cc628ecb1654ad5f58
         'Overtrue\\Pinyin\\' => 
         array (
             0 => __DIR__ . '/..' . '/overtrue/pinyin/src',
+        ),
+        'Overtrue\\LaravelQueryLogger\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/overtrue/laravel-query-logger/src',
         ),
         'Overtrue\\LaravelLang\\' => 
         array (
@@ -549,7 +554,10 @@ class ComposerStaticInit9746615780e148cc628ecb1654ad5f58
         'App\\Handlers\\SlugTranslateHandler' => __DIR__ . '/../..' . '/app/Handlers/SlugTranslateHandler.php',
         'App\\Http\\Controllers\\Api\\AuthorizationsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/AuthorizationsController.php',
         'App\\Http\\Controllers\\Api\\CaptchasController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/CaptchasController.php',
+        'App\\Http\\Controllers\\Api\\CategoriesController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/CategoriesController.php',
         'App\\Http\\Controllers\\Api\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/Controller.php',
+        'App\\Http\\Controllers\\Api\\ImagesController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/ImagesController.php',
+        'App\\Http\\Controllers\\Api\\TopicsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/TopicsController.php',
         'App\\Http\\Controllers\\Api\\UsersController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/UsersController.php',
         'App\\Http\\Controllers\\Api\\VerificationCodesController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/VerificationCodesController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -572,7 +580,9 @@ class ComposerStaticInit9746615780e148cc628ecb1654ad5f58
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\Api\\AuthorizationRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/AuthorizationRequest.php',
         'App\\Http\\Requests\\Api\\CaptchaRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/CaptchaRequest.php',
+        'App\\Http\\Requests\\Api\\ImageRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/ImageRequest.php',
         'App\\Http\\Requests\\Api\\SocialAuthorizationRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/SocialAuthorizationRequest.php',
+        'App\\Http\\Requests\\Api\\TopicRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/TopicRequest.php',
         'App\\Http\\Requests\\Api\\UserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/UserRequest.php',
         'App\\Http\\Requests\\Api\\VerificationCodesRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Api/VerificationCodesRequest.php',
         'App\\Http\\Requests\\ReplyRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ReplyRequest.php',
@@ -581,6 +591,7 @@ class ComposerStaticInit9746615780e148cc628ecb1654ad5f58
         'App\\Http\\Requests\\UserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UserRequest.php',
         'App\\Jobs\\TranslateSlug' => __DIR__ . '/../..' . '/app/Jobs/TranslateSlug.php',
         'App\\Models\\Category' => __DIR__ . '/../..' . '/app/Models/Category.php',
+        'App\\Models\\Image' => __DIR__ . '/../..' . '/app/Models/Image.php',
         'App\\Models\\Link' => __DIR__ . '/../..' . '/app/Models/Link.php',
         'App\\Models\\Model' => __DIR__ . '/../..' . '/app/Models/Model.php',
         'App\\Models\\Reply' => __DIR__ . '/../..' . '/app/Models/Reply.php',
@@ -603,6 +614,9 @@ class ComposerStaticInit9746615780e148cc628ecb1654ad5f58
         'App\\Providers\\EasySmsServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EasySmsServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Transformers\\CategoryTransformer' => __DIR__ . '/../..' . '/app/Transformers/CategoryTransformer.php',
+        'App\\Transformers\\ImageTransformer' => __DIR__ . '/../..' . '/app/Transformers/ImageTransformer.php',
+        'App\\Transformers\\TopicTransformer' => __DIR__ . '/../..' . '/app/Transformers/TopicTransformer.php',
         'App\\Transformers\\UserTransformer' => __DIR__ . '/../..' . '/app/Transformers/UserTransformer.php',
         'Barryvdh\\Debugbar\\Console\\ClearCommand' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Console/ClearCommand.php',
         'Barryvdh\\Debugbar\\Controllers\\AssetController' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Controllers/AssetController.php',
@@ -3465,6 +3479,7 @@ class ComposerStaticInit9746615780e148cc628ecb1654ad5f58
         'Overtrue\\LaravelLang\\Commands\\Publish' => __DIR__ . '/..' . '/overtrue/laravel-lang/src/Commands/Publish.php',
         'Overtrue\\LaravelLang\\FileLoader' => __DIR__ . '/..' . '/overtrue/laravel-lang/src/FileLoader.php',
         'Overtrue\\LaravelLang\\TranslationServiceProvider' => __DIR__ . '/..' . '/overtrue/laravel-lang/src/TranslationServiceProvider.php',
+        'Overtrue\\LaravelQueryLogger\\ServiceProvider' => __DIR__ . '/..' . '/overtrue/laravel-query-logger/src/ServiceProvider.php',
         'Overtrue\\Pinyin\\DictLoaderInterface' => __DIR__ . '/..' . '/overtrue/pinyin/src/DictLoaderInterface.php',
         'Overtrue\\Pinyin\\FileDictLoader' => __DIR__ . '/..' . '/overtrue/pinyin/src/FileDictLoader.php',
         'Overtrue\\Pinyin\\GeneratorFileDictLoader' => __DIR__ . '/..' . '/overtrue/pinyin/src/GeneratorFileDictLoader.php',
