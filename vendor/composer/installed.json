@@ -5694,17 +5694,17 @@
     },
     {
         "name": "summerblue/administrator",
-        "version": "v1.1.4",
-        "version_normalized": "1.1.4.0",
+        "version": "v1.1.8",
+        "version_normalized": "1.1.8.0",
         "source": {
             "type": "git",
             "url": "https://github.com/summerblue/administrator.git",
-            "reference": "a13939304c1dbba15ab56947f3ef9937657f586c"
+            "reference": "22869b39e471dcf43dd7eca7fd4839cc3836f14e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/summerblue/administrator/zipball/a13939304c1dbba15ab56947f3ef9937657f586c",
-            "reference": "a13939304c1dbba15ab56947f3ef9937657f586c",
+            "url": "https://api.github.com/repos/summerblue/administrator/zipball/22869b39e471dcf43dd7eca7fd4839cc3836f14e",
+            "reference": "22869b39e471dcf43dd7eca7fd4839cc3836f14e",
             "shasum": "",
             "mirrors": [
                 {
@@ -5722,7 +5722,7 @@
             "mockery/mockery": "~0.9",
             "phpunit/phpunit": "~5.7.12"
         },
-        "time": "2017-10-27T11:08:56+00:00",
+        "time": "2018-06-17T04:15:56+00:00",
         "type": "library",
         "extra": {
             "laravel": {
