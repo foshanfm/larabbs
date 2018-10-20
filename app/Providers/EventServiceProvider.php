@@ -17,6 +17,8 @@ class EventServiceProvider extends ServiceProvider
             //在这里添加你的监听事件
             'SocialiteProviders\Weixin\WeixinExtendSocialite@handle'
         ],
+        'eloquent.created: Illuminate\Notifications\DatabaseNotification' => ['App\Listeners\PushNotification',
+        ],
     ];
 
     /**
